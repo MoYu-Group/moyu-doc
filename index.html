@@ -25,9 +25,6 @@
       border-bottom: 1px solid hsla(210,18%,87%,1);
       line-height: 3;
     }
-    .markdown-section {
-      color: #1f2328;
-    }
     .markdown-section a {
       color: var(--theme-color);
     }
@@ -62,13 +59,11 @@
       name: 'MoYu-Group',
       loadSidebar: 'sidebar.md',
       subMaxLevel: 2,
-      // sidebarDisplayLevel: 1,
       alias: {
         '/.*/sidebar.md': '/sidebar.md'
       },
       auto2top: true,
       repo: 'https://github.com/MoYu-Group/moyu-doc',
-      // logo: 'https://static.ffis.me/moyu-group/img/favicon.ico',
       search: {
         noData: {
           '/': '找不到结果!'
@@ -101,7 +96,7 @@
       repo: 'moyu-doc',
       owner: 'MoYu-Group',
       admin: ['noisky', 'CHN-STUDENT', 'iPisces77', 'onct', 'lichen404', 'abinais'],
-      //评论ID，有长度限制，不能超过50
+      // 评论ID，有长度限制，不能超过50
       id: getMarkdownName(),
       distractionFreeMode: false,
       createIssueManually: true
@@ -110,7 +105,7 @@
     // 哈希路由切换时 重新加载Gitalk
     window.addEventListener("hashchange", onHashChange);
     function onHashChange() {
-      config.id = getMarkdownName(); //如果不切分，在docsify里面的各个段落都会生成新的评论issue
+      config.id = getMarkdownName();
     }
     // 获取md文件名，固定在文件名前面添加#字符，首页返回#home
     function getMarkdownName() {
