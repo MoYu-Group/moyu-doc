@@ -17,8 +17,40 @@
   <link href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css" rel="stylesheet">
   <!-- Custom Styles -->
   <style>
+    .sidebar li>p {
+      font-weight: 700;
+      margin: 5px 0;
+    }
+
+    .sidebar li:last-child>p {
+      border-bottom: 1px solid hsla(210,18%,87%,1);
+      line-height: 3;
+    }
+    .markdown-section {
+      color: #1f2328;
+    }
     .markdown-section a {
       color: var(--theme-color);
+    }
+    .markdown-section h1 {
+      padding-bottom: .3em;
+      font-size: 2em;
+      border-bottom: 1px solid hsla(210,18%,87%,1);
+    }
+    .markdown-section h2 {
+      font-size: 1.5em;
+    }
+    .markdown-section h3 {
+      font-size: 1.25em;
+    }
+    .markdown-section h4 {
+      font-size: 1em;
+    }
+    .markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
     }
   </style>
   <!-- EditOnGithub -->
@@ -30,10 +62,14 @@
     window.$docsify = {
       name: 'MoYu-Group',
       loadSidebar: 'sidebar.md',
+      subMaxLevel: 2,
+      // sidebarDisplayLevel: 1,
       alias: {
         '/.*/sidebar.md': '/sidebar.md'
       },
+      auto2top: true,
       repo: 'https://github.com/MoYu-Group/moyu-doc',
+      // logo: 'https://static.ffis.me/moyu-group/img/favicon.ico',
       search: {
         noData: {
           '/': '找不到结果!'
@@ -50,17 +86,9 @@
       ]
     }
   </script>
-  <main>
-    <section class="content">
-      <article class="markdown-section">
-        <div id="container"></div>
-      </article>
-    </section>
-  </main>
 
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <!-- docsify-themeable -->
   <script src="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
