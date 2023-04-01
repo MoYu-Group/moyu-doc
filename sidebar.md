@@ -4,12 +4,12 @@
 
 - **开发规范**
   - [项目规范](/development-protocol/project-protocol.md)
-  - [Git Commit规范](/)
-  - [接口返回值约定](/)
-  - [建表规范](/)
+  - [Git Commit规范](/development-protocol/git-commit-rule.md)
+  - [接口返回值约定](/development-protocol/response-data.md)
+  - [建表规范](/development-protocol/db-table-create-rule.md)
 
 - **MoYu-Blog**
-  - [导航设计](/)
+  - [导航设计](/moyu-blog/navigation-design.md)
 
 **Links**
 - [![Published with docsify](https://static.ffis.me/docsify/img/docsify16x16.png)Published with docsify](http://docsify.js.org)
