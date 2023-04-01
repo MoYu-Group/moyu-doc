@@ -1,4 +1,4 @@
-<!-- 侧边栏 -->
+<!-- 侧边栏配置，markdown文件名要保证全局唯一，否则会影响评论数据 -->
 
 - [简介](/)
 
@@ -11,5 +11,5 @@
 - **MoYu-Blog**
   - [导航设计](/moyu-blog/navigation-design.md)
 
-**Links**
-- [![Published with docsify](https://static.ffis.me/docsify/img/docsify16x16.png)Published with docsify](http://docsify.js.org)
+- **Links**
+  - [![Published with docsify](//static.ffis.me/docsify/img/docsify16x16.png)Published with docsify](http://docsify.js.org)

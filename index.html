@@ -66,16 +66,16 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-  <!-- gitalk-config -->
   <script>
+    //gitalk 配置
     let config = {
-      clientID: '8b0e168342e373671d56',
-      clientSecret: '4d54cbd206f33420f6972a93221deb69020f4854',
+      clientID: '12629c0df9397579e518',
+      clientSecret: 'e7391a997595102ea2e702e2c846066ed7ade45b',
       repo: 'moyu-doc',
       owner: 'MoYu-Group',
       admin: ['noisky', 'CHN-STUDENT'],
-      //评论ID，有长度限制，不超过50
-      id: decodeURI(location.href.split('#')[1]),
+      //评论ID，有长度限制，不能超过50
+      id: getMarkdownName(),
       distractionFreeMode: false,
       createIssueManually: true
     };
@@ -83,7 +83,12 @@
     // 哈希路由切换时 重新加载Gitalk
     window.addEventListener("hashchange", onHashChange);
     function onHashChange() {
-      config.id = decodeURI(location.href.split('#')[1]); //如果不切分，在docsify里面的各个段落都会生成新的评论issue
+      config.id = getMarkdownName(); //如果不切分，在docsify里面的各个段落都会生成新的评论issue
+    }
+    // 获取md文件名，固定在文件名前面添加#字符，首页返回#home
+    function getMarkdownName() {
+      let mdName = decodeURI(location.href.split('/')[location.href.split('/').length - 1]);
+      return "#" + (mdName ? mdName : "home");
     }
   </script>
 </body>
