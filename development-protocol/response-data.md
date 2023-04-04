@@ -40,6 +40,6 @@ MoYu 开发小组的所有接口，应遵循统一的数据格式规范，以提
 | └─ currentPage | Long      | 当前页                       |
 | └─ pageSize    | Long      | 页大小                       |
 | └─ totalCount  | Long      | 总记录数                      |
-| └─ totalPage   | Long      | 当前页                       |
+| └─ totalPage   | Long      | 总页数                       |
 | └─ data        | `List<T>` | 分页时返回的对象列表                |
 | └─└─ id        | Long      | 对象唯一标识，会作为查询、删除、更改的参数传给后端 |
