@@ -9,6 +9,9 @@
   - [接口返回值约定](/development-protocol/response-data.md)
   - [建表规范](/development-protocol/db-table-create-rule.md)
 
+- MoYu-Framework
+  - [日志规范](/moyu-framework/log-design.md)
+
 - MoYu-Blog
   - [导航设计](/moyu-blog/navigation-design.md)
 
