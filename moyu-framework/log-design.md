@@ -77,7 +77,7 @@ logback-spring.xml 配置引用摸鱼公共日志配置，参考
 spring 配置文件添加日志切面配置，一般针对 controller 接口层进行 aop 切面处理，可指定日志的输出位置。
 ```yaml
 moyu:
-  #方法运行切面日志
+  #方法运行切面日志配置
   method-time:
     #是否启用
     enabled: true
@@ -86,7 +86,7 @@ moyu:
     #接口参数截取长度
     paramsMaxLength: 2000
 logging:
-  #日志输出在工程相对路径下的 logs 文件夹
+  #日志输出目录
   file:
     path: ./logs
 ```
