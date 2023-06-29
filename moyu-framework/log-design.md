@@ -46,15 +46,15 @@
 2. 然后父工程依赖 moyu-framework
 ```xml
 <parent>
-    <artifactId>moyu-framework</artifactId>
     <groupId>io.github.moyu-group</groupId>
+    <artifactId>moyu-framework</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 </parent>
 ```
 3. 之后导入moyu-web快速开发模块
 ```xml
 <dependency>
-    <groupId>io.github.moyu-group</groupId>
+    <groupId>io.github.moyu-group.moyu-framework</groupId>
     <artifactId>moyu-web-autoconfiguers</artifactId>
 </dependency>
 ```
