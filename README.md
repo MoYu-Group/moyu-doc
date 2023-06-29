@@ -18,6 +18,13 @@ https://doc.ffis.me
 - 更新文档目录 `sidebar.md`，包括文档目录名称和文档相对访问地址
 - 提交 commit 即可自动触发 CloudFlare Action 自动更新在线文档
 
+## 本地运行
+```bash
+git clone https://github.com/MoYu-Group/moyu-doc.git
+cd moyu-doc
+docsify serve .
+```
+
 ## 摸鱼开发小组
 
 - 摸鱼开发小组，只有摸鱼的时候才会开发
