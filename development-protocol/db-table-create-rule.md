@@ -15,8 +15,8 @@
 ```sql
 CREATE TABLE `moyu`  (
   `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键',
-  `create_by` varchar(128) NOT NULL DEFAULT '' COMMENT '创建人',
-  `update_by` varchar(128) NOT NULL DEFAULT '' COMMENT '修改人',
+  `creator` varchar(128) NOT NULL DEFAULT '' COMMENT '创建人ID',
+  `modifier` varchar(128) NOT NULL DEFAULT '' COMMENT '修改人ID',
   `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
   `is_deleted` tinyint UNSIGNED NOT NULL DEFAULT 0 COMMENT '是否删除 0--未删除 1--已删除',
